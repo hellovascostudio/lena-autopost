@@ -50,7 +50,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render import BRAND, C, ROOT, block, draw_lines, font, red_line, spaced  # noqa: E402
+from render import BRAND, C, ROOT, set_theme, block, draw_lines, font, red_line, spaced  # noqa: E402
 
 W, H = 1080, 1920
 FPS = 30
@@ -318,6 +318,7 @@ RING = ("aevalsrc='0.22*sin(2*PI*1400*t)*(0.55+0.45*sin(2*PI*20*t))"
 def render_reel(folder):
     folder = Path(folder)
     post = json.loads((folder / "post.json").read_text(encoding="utf-8"))
+    set_theme(post.get("theme"))
     voice = post.get("voice", "en-GB-SoniaNeural")
     rate = post.get("rate", "-6%")
     lines = [ln if isinstance(ln, dict) else {"text": ln} for ln in post["excerpt"]]

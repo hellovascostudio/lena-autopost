@@ -14,6 +14,7 @@ Read `brand/lena.md` before writing any content, and `plan/` for the current mon
 ## post.json
 - `publish_at`: ISO time with offset, Europe/Amsterdam (`+01:00` in winter, `+02:00` in summer).
 - `caption`: full caption incl. hashtags. ≤2200 chars, ≤30 hashtags.
+- `theme` (optional): book colours, see `brand/lena.md` › Book colours.
 - `slides`: types `cover`, `text`, `quote`, `cta`, `book` (cover image + optional kicker/title), `photo`.
   One slide = single-image post; 2–10 slides = carousel. Tip carousels: aim for 5–7 slides, last slide a `cta` ("Save this for your next trip").
 

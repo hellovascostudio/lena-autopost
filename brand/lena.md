@@ -54,3 +54,9 @@ Manuscripts (docx/epub) are in Shelley's Documents › Amazon KDP Books › The 
 - Deep teal `#163D45` background, cream text `#F3EBDD`, soft grey-teal `#9DB3B1`, sunset orange accent `#F0A040`.
 - Inter Bold for titles, Cormorant Garamond Italic for subtitles and quotes, Inter for body.
 - Reels: cream paper, coral accent `#C8553D`.
+
+## Book colours
+Each book has its own theme in `brand/style.json` → `themes`. Set `"theme"` in post.json:
+`solo-travel` (default, teal/orange), `confidence` (plum/coral), `money` (forest green/gold),
+`career` (navy/amber), `boundaries` (indigo/sage). Use a book's theme for posts about that book or its topic;
+general posts stay on the default.
