@@ -1,0 +1,10 @@
+{
+  "handle": "@lenaadairbooks",
+  "colors": {
+    "background": "#163D45",
+    "text": "#F3EBDD",
+    "muted": "#9DB3B1",
+    "accent": "#F0A040",
+    "line": "#2A535B"
+  }
+}
