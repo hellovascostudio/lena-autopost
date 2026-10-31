@@ -6,5 +6,42 @@
     "muted": "#9DB3B1",
     "accent": "#F0A040",
     "line": "#2A535B"
+  },
+  "themes": {
+    "solo-travel": {
+      "background": "#163D45",
+      "text": "#F3EBDD",
+      "muted": "#9DB3B1",
+      "accent": "#F0A040",
+      "line": "#2A535B"
+    },
+    "confidence": {
+      "background": "#381D3D",
+      "text": "#F5EBE0",
+      "muted": "#B9A3B5",
+      "accent": "#EE7C61",
+      "line": "#523356"
+    },
+    "money": {
+      "background": "#12403A",
+      "text": "#F3EBDD",
+      "muted": "#9DBBAF",
+      "accent": "#F3CA70",
+      "line": "#285A52"
+    },
+    "career": {
+      "background": "#172748",
+      "text": "#F3EBDD",
+      "muted": "#A3AEC4",
+      "accent": "#F3B455",
+      "line": "#2E4066"
+    },
+    "boundaries": {
+      "background": "#2B325E",
+      "text": "#F3EBDD",
+      "muted": "#AEB3CF",
+      "accent": "#B8D0A8",
+      "line": "#434A7A"
+    }
   }
 }

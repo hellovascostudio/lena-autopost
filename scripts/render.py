@@ -11,6 +11,9 @@ Slide types (in post.json -> "slides"):
     cta    : title, body (optional)
     book   : image (book cover, e.g. assets/covers/answer-the-landline.jpg), kicker (optional), title (optional)
     photo  : image (path inside the repo), title (optional)
+
+Optional "theme" in post.json: a key of "themes" in brand/style.json (solo-travel, confidence, money,
+career, boundaries) to use that book's colours. Without it the default (Solo Travel teal) is used.
 """
 import json
 import sys
@@ -24,7 +27,7 @@ BRAND = json.loads((ROOT / "brand" / "style.json").read_text(encoding="utf-8"))
 
 W, H = 1080, 1350
 MARGIN = 96
-C = BRAND["colors"]
+C = dict(BRAND["colors"])
 
 
 def font(kind, size):
@@ -189,9 +192,16 @@ def slide_photo(s, img, draw):
     return None  # bare photo: no text, no frame
 
 
+def set_theme(name=None):
+    """Use a book's colours (brand/style.json -> themes) for this post; default = brand colours."""
+    C.clear()
+    C.update(BRAND["themes"][name] if name else BRAND["colors"])
+
+
 def render_post(folder):
     folder = Path(folder)
     post = json.loads((folder / "post.json").read_text(encoding="utf-8"))
+    set_theme(post.get("theme"))
     # fonts have no emoji glyphs: strip them from slide text (captions keep theirs)
     clean = lambda v: "".join(ch for ch in v if ord(ch) < 0x2190).strip() if isinstance(v, str) else v
     slides = [{k: (v if k == "image" else clean(v)) for k, v in s.items()} for s in post["slides"]]

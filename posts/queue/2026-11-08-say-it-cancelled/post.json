@@ -1,0 +1,29 @@
+{
+  "publish_at": "2026-11-08T10:00:00+01:00",
+  "pillar": "Say it like this",
+  "caption": "Your flight is cancelled. You're on your own. There's a queue.\n\nThis is the moment most travel books skip. After years on the other side of the desk, here's what I'd say.\n\nScreenshot it. Then you don't have to think of it under pressure. ✈️\n\nAnd a small announcement: The Brave Itinerary: Solo Travel, Book One, is coming very soon. More on that this week.\n\n#solotravel #solofemaletravel #travelalone #flightcancelled #traveltips #womenwhotravel #booksforwomen #comingsoon",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Say it like this",
+      "title": "Your flight is cancelled. Here's what to say at the desk.",
+      "subtitle": "Words for the moment it goes wrong."
+    },
+    {
+      "type": "quote",
+      "quote": "My flight has been cancelled. I'd like to be rebooked on the next available flight to my destination, and I'd like a hotel voucher and meal vouchers while I wait. Could I have that confirmed in writing, please?",
+      "author": "Firm · The Brave Itinerary: Solo Travel"
+    },
+    {
+      "type": "text",
+      "heading": "Before you go",
+      "body": "Save your airline's app and number, your booking reference, your insurer's emergency line and one alternative route.\n\nYour rights depend on where you fly: check the official passenger-rights rules."
+    },
+    {
+      "type": "book",
+      "image": "assets/covers/solo-travel.jpg",
+      "kicker": "Coming soon",
+      "title": "The Brave Itinerary: Solo Travel"
+    }
+  ]
+}
